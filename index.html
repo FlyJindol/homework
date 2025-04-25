@@ -9,7 +9,7 @@
         margin: 0;
         padding: 0;
         font-family: 'Noto Sans KR', sans-serif;
-        background-color: #f5f5f5;
+        background-color: #31473a;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -17,7 +17,7 @@
       }
 
       .profile-card {
-        background: white;
+        background: rgb(237, 244, 242);
         border-radius: 20px;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         padding: 2rem;
@@ -31,18 +31,18 @@
         border-radius: 50%;
         margin-bottom: 1.5rem;
         object-fit: cover;
-        border: 5px solid #f0f0f0;
+        border: 5px solid #9c9c9c;
       }
 
       .name {
         font-size: 1.5rem;
         font-weight: bold;
-        color: #333;
+        color: #000000;
         margin-bottom: 0.5rem;
       }
 
       .bio {
-        color: #666;
+        color: #000000;
         line-height: 1.6;
         margin-bottom: 1.5rem;
       }
@@ -63,13 +63,13 @@
       .homework-links a {
         display: block;
         text-align: center;
-        color: #555;
+        color: #000000;
         text-decoration: none;
         transition: color 0.3s ease;
       }
 
       .homework-links a:hover {
-        color: #007bff;
+        color: #ff0000;
       }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet" />
@@ -82,12 +82,26 @@
       <!-- 이유 1 : 저장소의 이름을 homework에서 다른 이름으로 변경할 경우 모든 절대 경로를 수정해야 합니다. -->
       <!-- Github 배포를 위해 절대 경로를 사용할 경우 로컬에서 확인이 불가합니다. (https://localhost:8090으로 접속했을 때 homework을 찾지 못함) -->
       <!-- 이러한 이유로 과제를 작성할 경우 반드시 경로는 상대 경로를 사용해 주세요 -->
-      <img src="/homework/src/assets/ssam.jpg" alt="슬비쌤 프로필" class="profile-image" />
       <!-- 상대 경로로 이미지 삽입하기 -->
-      <img src="./src/assets/ssam.jpg" alt="슬비쌤 프로필" class="profile-image" />
-      <h1 class="name">슬비쌤</h1>
-      <p class="bio">멋쟁이 사자처럼 프론트엔드 부트캠프 14기 슬비쌤 입니다.</p>
-      <p>과제 결과는 링크를 선택해주세요.</p>
+      <img src="./src/assets/Passport-photo2.jpg" alt="송인재 수강생 프로필 사진" style="width: 300px; height: 300px; margin-bottom: 1px" class="profile-image" />
+      <h1 class="name" style="margin-top: 12px">송인재</h1>
+      <p class="bio">멋쟁이 사자처럼 프론트엔드 부트캠프 14기 수강생 송인재 입니다.</p>
+      <p style="font-size: 18px">
+        과제 완성본을 보시려면 아래 글씨를<br />
+        눌러주세요.
+      </p>
+      <p style="display: flex; gap: 135px">
+        <span class="arrow" style="margin-left: 65px">&darr;</span>
+        <span class="arrow">&darr;</span>
+        <style>
+          .name {
+            font-size: 38px;
+          }
+          .bio {
+            font-size: 21px;
+          }
+        </style>
+      </p>
       <ul class="homework-links">
         <li><a href="./src/md/markdown.md">마크다운 문법</a></li>
         <li><a href="./src/md/week1-retrospect.md">1주차 회고</a></li>
