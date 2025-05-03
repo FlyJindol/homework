@@ -1,1 +1,19 @@
-/* 여기에 스타일을 구현해 주세요 */
+img {
+  border-radius: 50%;
+  width: 128px;
+  height: 128px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+
+svg {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  transform: translate(-41%, 17%);
+}
+
+html {
+  background-color: #363131;
+}
